@@ -1,0 +1,20 @@
+﻿<Window x:Class="PortMapper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PortMapper"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Height="415" Margin="0,0,10,0" Background="#FFEEEEEE">
+        <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" Text="Port Mapper" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="184" FontSize="32"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,181,0,0" Text="Listen on:  " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="port" HorizontalAlignment="Left" Margin="121,181,0,0" Text="Port" TextWrapping="Wrap" VerticalAlignment="Top" Width="219" Background="#9366CCFF" TextChanged="portA_TextChanged"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,181,0,0" Text="Send to:  " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="ipAddr" HorizontalAlignment="Left" Margin="445,181,0,0" Text="IP Address" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Background="#9366CCFF" TextChanged="portB_TextChanged"/>
+        <Button x:Name="start" Content="Start" HorizontalAlignment="Center" Margin="0,286,0,0" VerticalAlignment="Top" Height="62" Width="159" FontSize="24" Background="#FF03FFC8" Foreground="White" Click="start_Click"/>
+        <ComboBox x:Name="typeA" HorizontalAlignment="Left" Margin="30,223,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="typeB" HorizontalAlignment="Left" Margin="357,223,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

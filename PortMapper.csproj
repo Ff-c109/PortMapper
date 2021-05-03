@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Copyright>Ff_c109</Copyright>
+    <PackageLicenseExpression>For commercial use, please indicate the original developer</PackageLicenseExpression>
+    <Description>TCP/UDP Port Mapping</Description>
+    <PackageReleaseNotes>Port mapping is implemented by socat.
+Contact the developer: xjy20060326xjy@outlook.com
+
+bilibili - Ff_c109</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="socat\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="socat\msys-2.0.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="socat\msys-crypto-1.0.0.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="socat\msys-ncursesw6.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="socat\msys-readline7.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="socat\msys-ssl-1.0.0.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="socat\msys-z.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="socat\socat.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
